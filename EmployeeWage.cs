@@ -14,7 +14,7 @@ namespace EmployeeWageProblem
         {
             int IS_FULL_TIME = 1;
             int IS_PART_TIME = 2;
-            int Wage = 20;
+            int PER_HR_WAGE = 20;
             int empHrs = 0;
             int empWage = 0;
 
@@ -39,7 +39,7 @@ namespace EmployeeWageProblem
                 empHrs = 0;
             }
 
-            empWage = empHrs * Wage;
+            empWage = empHrs * PER_HR_WAGE;
             Console.WriteLine("Employee Wage is: " + empWage);
         }
     }
