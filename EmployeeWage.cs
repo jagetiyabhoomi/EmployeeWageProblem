@@ -19,7 +19,7 @@ namespace EmployeeWageProblem
             int empWage = 0;
 
             Random random = new Random();
-            int empCheck = random.Next(2);
+            int empCheck = random.Next(3);
 
 
             if (empCheck == IS_FULL_TIME)
@@ -27,7 +27,12 @@ namespace EmployeeWageProblem
                 Console.WriteLine("Employee is Full Time");
                 empHrs = 8;
             }
-            
+            else if (empCheck == IS_PART_TIME)
+            {
+                Console.WriteLine("Employee is Part Time");
+                empHrs = 4;
+            }
+
             else
             {
                 Console.WriteLine("Employess hasn't worked");
